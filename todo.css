@@ -1,5 +1,5 @@
 body{
-    background: rgb(96, 14, 179);
+    background: rgba(1, 0, 2, 1.0);
 }
 
 .container{
@@ -17,4 +17,8 @@ input[type=text]:focus{
 }
 .delete{
     cursor: pointer;
+}
+
+.filtered{
+    display: none !important;
 }

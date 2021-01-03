@@ -1,6 +1,8 @@
 const addTodo = document.querySelector(".add");
 const list = document.querySelector(".todos");
 
+
+//ADDING TODOS
 const generateTemplate = todo => {
     const html = `
     <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -19,6 +21,12 @@ addTodo.addEventListener("submit", e=>{
         generateTemplate(todo);
         addTodo.reset();
     };
-   
 
 })
+
+//DELETING TODOS
+    list.addEventListener("click", e =>{
+        if(e.target.classList.contains("delete")){
+            e.target.parentElement.remove();
+        }
+    })
